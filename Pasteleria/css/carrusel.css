@@ -1,0 +1,183 @@
+.content{
+    width: 100%;
+    height: 450px;
+    transform: perspective(6000px);
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.carrousel{
+    position: absolute;
+    width: 57%;
+    left: 21.5%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    animation: 20s rotar infinite linear;
+}
+
+.carrousel > div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background: green;
+}
+
+.carrousel >div:nth-child(1){
+    transform: rotateY(-90deg) translateX(86.6%) rotateY(90deg);
+    animation: 20s fadeCard01 infinite;
+}
+.carrousel >div:nth-child(2){
+    transform: rotateY(-30deg) translateX(86.6%) rotateY(90deg);
+    animation: 20s fadeCard02 infinite;
+    opacity: 0.5;
+}
+.carrousel >div:nth-child(3){
+    transform: rotateY(30deg) translateX(86.6%) rotateY(90deg);
+    animation: 20s fadeCard03 infinite;
+    opacity: 0.5;
+}
+.carrousel >div:nth-child(4){
+    transform: rotateY(90deg) translateX(86.6%) rotateY(90deg);
+    animation: 20s fadeCard04 infinite;
+    opacity: 0.5;
+}
+.carrousel >div:nth-child(5){
+    transform: rotateY(150deg) translateX(86.6%) rotateY(90deg);
+    animation: 20s fadeCard05 infinite;
+    opacity: 0.5;
+}
+.carrousel >div:nth-child(6){
+    transform: rotateY(210deg) translateX(86.6%) rotateY(90deg);
+    animation: 20s fadeCard06 infinite;
+    opacity: 0.5;
+}
+
+@keyframes rotar{
+    0%{
+        transform: rotateX(-3deg) rotateY(0deg);
+    }
+    14%{
+        transform: rotateX(-3deg) rotateY(0deg);
+    }
+    16.5%{
+        transform: rotateX(-3deg) rotateY(-60deg);
+    }
+    30.5%{
+        transform: rotateX(-3deg) rotateY(-60deg);
+    }
+    33%{
+        transform: rotateX(-3deg) rotateY(-120deg);
+    }
+    47%{
+        transform: rotateX(-3deg) rotateY(-120deg);
+    }
+    49.5%{
+        transform: rotateX(-3deg) rotateY(-180deg);
+    }
+    63.5%{
+        transform: rotateX(-3deg) rotateY(-180deg);
+    }
+    66%{
+        transform: rotateX(-3deg) rotateY(-240deg);
+    }
+    80%{
+        transform: rotateX(-3deg) rotateY(-240deg);
+    }
+    82.5%{
+        transform: rotateX(-3deg) rotateY(-300deg);
+    }
+    97.5%{
+        transform: rotateX(-3deg) rotateY(-300deg);
+    }
+    100%{
+        transform: rotateX(-3deg) rotateY(-360deg)
+    }
+}
+
+@keyframes fadeCard01 {
+    14%{
+        opacity: 1;
+    }
+    16.5%{
+        opacity: 0.5;
+    }
+    97.5%{
+        opacity: 0.5;
+    }
+}
+
+@keyframes fadeCard02 {
+    14%{
+        opacity: 0.5;
+    }
+    16.5%{
+        opacity: 1;
+    }
+    30.5%{
+        opacity: 1;
+    }
+    33%{
+        opacity: 0.5;
+    }
+}
+@keyframes fadeCard03 {
+    30.5%{
+        opacity: 0.5;
+    }
+    33%{
+        opacity: 1;
+    }
+    47%{
+        opacity: 1;
+    }
+    49.5%{
+        opacity: 0.5;
+    }
+}
+@keyframes fadeCard04 {
+    47%{
+        opacity: 0.5;
+    }
+    49.5%{
+        opacity: 1;
+    }
+    63.5%{
+        opacity: 1;
+    }
+    66%{
+        opacity: 0.5;
+    }
+}
+@keyframes fadeCard05 {
+    63.5%{
+        opacity: 0.5;
+    }
+    66%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    82.5%{
+        opacity: 0.5;
+    }
+}
+@keyframes fadeCard06 {
+    80%{
+        opacity: 0.5;
+    }
+    82.5%{
+        opacity: 1;
+    }
+    97.5%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
