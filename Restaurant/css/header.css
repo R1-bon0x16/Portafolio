@@ -1,0 +1,70 @@
+@font-face{
+    font-family: "Alex_Brush";
+    src: local("?"),
+        url("./fonts/Alex_Brush/AlexBrush-Regular.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Great_Vibes";
+    src: local("?"),
+        url("./fonts/Great_Vibes/GreatVibes-Regular.ttf") format("truetype");
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 200px;
+    opacity: 0.9;
+}
+
+header .logo{
+    background: #222;
+}
+
+.logo{
+    color: white;
+    text-align: center;
+    font-family: "Great_Vibes";
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.logo span{
+    text-align: right;
+    font-size: 0.55em;
+    display: block;
+    padding-right: 30px;
+    margin-top: -18px;
+}
+
+.logo img{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+nav li{
+    list-style: none;
+    background: #333;
+}
+
+nav a:link, nav a:visited{
+    line-height: 30px;
+    display: block;
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background: orange;
+    border-left: 2px solid white;
+}

@@ -1,0 +1,81 @@
+.chef{
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.chef .grafica{
+    width: 30%;
+    height: 250px;
+    border: 1px solid #777;
+    box-shadow: 2px 2px 7px #666;
+    position: relative;
+}
+
+.chef .efecto{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.chef .foto{
+    width: 100%;
+    height: 100%;
+    background: url("../images/chef.jpg") right;
+    background-size: cover;
+    animation: 15s efectoChef infinite;
+    transform-origin: center;
+}
+
+.chef .nombre{
+    position: absolute;
+    width: 110%;
+    background: #EEE;
+    border: 1px solid #999;
+    font-size: 1.2em;
+    padding: 10px;
+    bottom: 20px;
+    left: -5%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.chef .nombre::before, .chef .nombre::after{
+    content: '';
+    border-style: solid;
+    border-width: 20px;
+    position: absolute;
+    z-index: -1;
+}
+
+.chef .nombre::before{
+    left: -20px;
+    top: 50%;
+    border-color: #CCC #999 #CCC transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.chef .nombre::after{
+    right: -20px;
+    top: 50%;
+    border-color: #CCC transparent #CCC #999;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes efectoChef{
+    50%{
+        transform: scale(1.05) rotate(2deg);
+    }
+}
+
+.chef .descripcion{
+    width: 60%;
+    text-align: justify;
+}
+
+.chef .grafica, .chef .descripcion{
+    vertical-align: top;
+    display: inline-block;
+}
+
+.chef .descripcion{
+    padding: 5px 30px;
+}
