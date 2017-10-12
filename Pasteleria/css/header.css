@@ -1,0 +1,51 @@
+.logo{
+    width: 160px;
+    margin: auto;
+    position: relative;
+    z-index: 99;
+}
+
+.logo img{
+    border-radius: 50px 50px 0 0;
+    border: 1px solid #AFA338;
+    width: 120px;
+    box-shadow: 0px 2px 4px #AFA338;
+}
+
+.logo .brand{
+    background: #fcf5ad;
+    font-family: "Cookie";
+    font-size: 2.2em;
+    line-height: 0.8em;
+    position: relative;
+    bottom: 40px;
+    border: 1px solid #AFA338;
+    font-weight: bolder;
+}
+
+.logo .brand::before, .logo .brand::after{
+    content: '';
+    border-style: solid;
+    border-width: 15px;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo .brand::before{
+    left: -15px;
+    top: 50%;
+    border-color: #fcf5ad #AFA338 #fcf5ad transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo .brand::after{
+    right: -15px;
+    top: 50%;
+    border-color: #fcf5ad transparent #fcf5ad #AFA338;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header nav{
+    margin-top: -80px;
+    background: #675B52;
+}

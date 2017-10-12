@@ -1,0 +1,5 @@
+@font-face{
+    font-family: "Cookie";
+    src: local('?'),
+        url('./fonts/Cookie/Cookie-Regular.ttf') format('truetype');
+}

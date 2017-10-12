@@ -1,3 +1,47 @@
+/* fcf5ad */
 * {
     box-sizing: border-box;
+}
+
+body{
+    /* background: #FFD7DF; */
+    background: linear-gradient(#DFCF59 0px, #fcf5ad 25px, white 100px) no-repeat;
+    overflow: hidden;
+}
+
+.carousel div{
+    background-size: cover;
+}
+
+.carousel div:nth-child(1){
+    background-image: url("../images/carousel/01.jpg");
+}
+
+.carousel div:nth-child(2){
+    background-image: url("../images/carousel/02.jpg");
+}
+
+.carousel div:nth-child(3){
+    background-image: url("../images/carousel/03.jpg");
+}
+
+.carousel div:nth-child(4){
+    background-image: url("../images/carousel/04.jpg");
+}
+
+.carousel div:nth-child(5){
+    background-image: url("../images/carousel/05.jpg");
+}
+
+.carousel div:nth-child(6){
+    background-image: url("../images/carousel/06.jpg");
+}
+
+footer{
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
