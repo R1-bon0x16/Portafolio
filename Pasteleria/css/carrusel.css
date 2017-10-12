@@ -5,17 +5,18 @@
     transform-style: preserve-3d;
     transform-origin: center center;
     position: relative;
-    margin: 10px auto;
+    margin: auto;
+    overflow: hidden;
 }
 
 .carousel{
     position: absolute;
-    width: 57%;
-    left: 21.5%;
+    width: 70%;
+    left: 15%;
     height: 100%;
     transform-style: preserve-3d;
     transform-origin: center center;
-    animation: 20s rotar infinite linear;
+    animation: 25s rotar infinite linear;
 }
 
 .carousel > div{
@@ -27,31 +28,31 @@
 
 .carousel >div:nth-child(1){
     transform: rotateY(-90deg) translateX(86.6%) rotateY(90deg);
-    animation: 20s fadeCard01 infinite;
+    animation: 25s fadeCard01 infinite;
 }
 .carousel >div:nth-child(2){
     transform: rotateY(-30deg) translateX(86.6%) rotateY(90deg);
-    animation: 20s fadeCard02 infinite;
+    animation: 25s fadeCard02 infinite;
     opacity: 0.6;
 }
 .carousel >div:nth-child(3){
     transform: rotateY(30deg) translateX(86.6%) rotateY(90deg);
-    animation: 20s fadeCard03 infinite;
+    animation: 25s fadeCard03 infinite;
     opacity: 0.6;
 }
 .carousel >div:nth-child(4){
     transform: rotateY(90deg) translateX(86.6%) rotateY(90deg);
-    animation: 20s fadeCard04 infinite;
+    animation: 25s fadeCard04 infinite;
     opacity: 0.6;
 }
 .carousel >div:nth-child(5){
     transform: rotateY(150deg) translateX(86.6%) rotateY(90deg);
-    animation: 20s fadeCard05 infinite;
+    animation: 25s fadeCard05 infinite;
     opacity: 0.6;
 }
 .carousel >div:nth-child(6){
     transform: rotateY(210deg) translateX(86.6%) rotateY(90deg);
-    animation: 20s fadeCard06 infinite;
+    animation: 25s fadeCard06 infinite;
     opacity: 0.6;
 }
 

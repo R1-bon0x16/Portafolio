@@ -5,12 +5,12 @@
 
 body{
     /* background: #FFD7DF; */
-    background: linear-gradient(#DFCF59 0px, #fcf5ad 25px, white 100px) no-repeat;
-    overflow: hidden;
+    background: linear-gradient(#DFCF59 0px, #fcf5ad 15px, white 150px) no-repeat;
 }
 
 .carousel div{
     background-size: cover;
+    background-position: center;
 }
 
 .carousel div:nth-child(1){
@@ -40,8 +40,22 @@ body{
 footer{
     background: black;
     color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     text-align: center;
+}
+
+.slogan h1{
+    font-family: "Cookie";
+    font-size: 5em;
+    position: relative;
+    color: #352E06;
+}
+
+.slogan h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0.2em;
+    left: 30%;
+    width: 40%;
+    border-bottom: 3px solid #B8A749;
+    z-index: -1;
 }
