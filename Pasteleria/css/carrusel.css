@@ -1,182 +1,184 @@
-.content{
-    width: 100%;
-    height: 500px;
-    transform: perspective(6000px);
-    transform-style: preserve-3d;
-    transform-origin: center center;
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-}
-
-.carousel{
-    position: absolute;
-    width: 70%;
-    left: 15%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transform-origin: center center;
-    animation: 25s rotar infinite linear;
-}
-
-.carousel > div{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.carousel >div:nth-child(1){
-    transform: rotateY(-90deg) translateX(86.6%) rotateY(90deg);
-    animation: 25s fadeCard01 infinite;
-}
-.carousel >div:nth-child(2){
-    transform: rotateY(-30deg) translateX(86.6%) rotateY(90deg);
-    animation: 25s fadeCard02 infinite;
-    opacity: 0.6;
-}
-.carousel >div:nth-child(3){
-    transform: rotateY(30deg) translateX(86.6%) rotateY(90deg);
-    animation: 25s fadeCard03 infinite;
-    opacity: 0.6;
-}
-.carousel >div:nth-child(4){
-    transform: rotateY(90deg) translateX(86.6%) rotateY(90deg);
-    animation: 25s fadeCard04 infinite;
-    opacity: 0.6;
-}
-.carousel >div:nth-child(5){
-    transform: rotateY(150deg) translateX(86.6%) rotateY(90deg);
-    animation: 25s fadeCard05 infinite;
-    opacity: 0.6;
-}
-.carousel >div:nth-child(6){
-    transform: rotateY(210deg) translateX(86.6%) rotateY(90deg);
-    animation: 25s fadeCard06 infinite;
-    opacity: 0.6;
-}
-
-@keyframes rotar{
-    0%{
-        transform: rotateX(-3deg) rotateY(0deg);
+@media screen and (min-width: 767px) {
+    .content{
+        width: 100%;
+        height: 500px;
+        transform: perspective(6000px);
+        transform-style: preserve-3d;
+        transform-origin: center center;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
     }
-    14%{
-        transform: rotateX(-3deg) rotateY(0deg);
+    
+    .carousel{
+        position: absolute;
+        width: 70%;
+        left: 15%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transform-origin: center center;
+        animation: 25s rotar infinite linear;
     }
-    16.5%{
-        transform: rotateX(-3deg) rotateY(-60deg);
+    
+    .carousel > div{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
     }
-    30.5%{
-        transform: rotateX(-3deg) rotateY(-60deg);
+    
+    .carousel >div:nth-child(1){
+        transform: rotateY(-90deg) translateX(86.6%) rotateY(90deg);
+        animation: 25s fadeCard01 infinite;
     }
-    33%{
-        transform: rotateX(-3deg) rotateY(-120deg);
-    }
-    47%{
-        transform: rotateX(-3deg) rotateY(-120deg);
-    }
-    49.5%{
-        transform: rotateX(-3deg) rotateY(-180deg);
-    }
-    63.5%{
-        transform: rotateX(-3deg) rotateY(-180deg);
-    }
-    66%{
-        transform: rotateX(-3deg) rotateY(-240deg);
-    }
-    80%{
-        transform: rotateX(-3deg) rotateY(-240deg);
-    }
-    82.5%{
-        transform: rotateX(-3deg) rotateY(-300deg);
-    }
-    97.5%{
-        transform: rotateX(-3deg) rotateY(-300deg);
-    }
-    100%{
-        transform: rotateX(-3deg) rotateY(-360deg)
-    }
-}
-
-@keyframes fadeCard01 {
-    14%{
-        opacity: 1;        
-    }
-    16.5%{
-        opacity: 0.6;      
-    }
-    97.5%{
+    .carousel >div:nth-child(2){
+        transform: rotateY(-30deg) translateX(86.6%) rotateY(90deg);
+        animation: 25s fadeCard02 infinite;
         opacity: 0.6;
     }
-}
-
-@keyframes fadeCard02 {
-    14%{
+    .carousel >div:nth-child(3){
+        transform: rotateY(30deg) translateX(86.6%) rotateY(90deg);
+        animation: 25s fadeCard03 infinite;
         opacity: 0.6;
     }
-    16.5%{
-        opacity: 1;
-    }
-    30.5%{
-        opacity: 1;
-    }
-    33%{
+    .carousel >div:nth-child(4){
+        transform: rotateY(90deg) translateX(86.6%) rotateY(90deg);
+        animation: 25s fadeCard04 infinite;
         opacity: 0.6;
     }
-}
-@keyframes fadeCard03 {
-    30.5%{
+    .carousel >div:nth-child(5){
+        transform: rotateY(150deg) translateX(86.6%) rotateY(90deg);
+        animation: 25s fadeCard05 infinite;
         opacity: 0.6;
     }
-    33%{
-        opacity: 1;
-    }
-    47%{
-        opacity: 1;
-    }
-    49.5%{
+    .carousel >div:nth-child(6){
+        transform: rotateY(210deg) translateX(86.6%) rotateY(90deg);
+        animation: 25s fadeCard06 infinite;
         opacity: 0.6;
     }
-}
-@keyframes fadeCard04 {
-    47%{
-        opacity: 0.6;
+    
+    @keyframes rotar{
+        0%{
+            transform: rotateX(-3deg) rotateY(0deg);
+        }
+        14%{
+            transform: rotateX(-3deg) rotateY(0deg);
+        }
+        16.5%{
+            transform: rotateX(-3deg) rotateY(-60deg);
+        }
+        30.5%{
+            transform: rotateX(-3deg) rotateY(-60deg);
+        }
+        33%{
+            transform: rotateX(-3deg) rotateY(-120deg);
+        }
+        47%{
+            transform: rotateX(-3deg) rotateY(-120deg);
+        }
+        49.5%{
+            transform: rotateX(-3deg) rotateY(-180deg);
+        }
+        63.5%{
+            transform: rotateX(-3deg) rotateY(-180deg);
+        }
+        66%{
+            transform: rotateX(-3deg) rotateY(-240deg);
+        }
+        80%{
+            transform: rotateX(-3deg) rotateY(-240deg);
+        }
+        82.5%{
+            transform: rotateX(-3deg) rotateY(-300deg);
+        }
+        97.5%{
+            transform: rotateX(-3deg) rotateY(-300deg);
+        }
+        100%{
+            transform: rotateX(-3deg) rotateY(-360deg)
+        }
     }
-    49.5%{
-        opacity: 1;
+    
+    @keyframes fadeCard01 {
+        14%{
+            opacity: 1;        
+        }
+        16.5%{
+            opacity: 0.6;      
+        }
+        97.5%{
+            opacity: 0.6;
+        }
     }
-    63.5%{
-        opacity: 1;
+    
+    @keyframes fadeCard02 {
+        14%{
+            opacity: 0.6;
+        }
+        16.5%{
+            opacity: 1;
+        }
+        30.5%{
+            opacity: 1;
+        }
+        33%{
+            opacity: 0.6;
+        }
     }
-    66%{
-        opacity: 0.6;
+    @keyframes fadeCard03 {
+        30.5%{
+            opacity: 0.6;
+        }
+        33%{
+            opacity: 1;
+        }
+        47%{
+            opacity: 1;
+        }
+        49.5%{
+            opacity: 0.6;
+        }
     }
-}
-@keyframes fadeCard05 {
-    63.5%{
-        opacity: 0.6;
+    @keyframes fadeCard04 {
+        47%{
+            opacity: 0.6;
+        }
+        49.5%{
+            opacity: 1;
+        }
+        63.5%{
+            opacity: 1;
+        }
+        66%{
+            opacity: 0.6;
+        }
     }
-    66%{
-        opacity: 1;
+    @keyframes fadeCard05 {
+        63.5%{
+            opacity: 0.6;
+        }
+        66%{
+            opacity: 1;
+        }
+        80%{
+            opacity: 1;
+        }
+        82.5%{
+            opacity: 0.6;
+        }
     }
-    80%{
-        opacity: 1;
-    }
-    82.5%{
-        opacity: 0.6;
-    }
-}
-@keyframes fadeCard06 {
-    80%{
-        opacity: 0.6;
-    }
-    82.5%{
-        opacity: 1;
-    }
-    97.5%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0.6;
+    @keyframes fadeCard06 {
+        80%{
+            opacity: 0.6;
+        }
+        82.5%{
+            opacity: 1;
+        }
+        97.5%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0.6;
+        }
     }
 }
