@@ -37,17 +37,12 @@ body{
     background-image: url("../images/carousel/06.jpg");
 }
 
-footer{
-    background: black;
-    color: white;
-    text-align: center;
-}
-
 .slogan h1{
     font-family: "Cookie";
     font-size: 5em;
     position: relative;
     color: #352E06;
+    margin: 20px 0px;
 }
 
 .slogan h1::after{
@@ -58,4 +53,38 @@ footer{
     width: 40%;
     border-bottom: 3px solid #B8A749;
     z-index: -1;
+}
+
+.carousel h2{
+    color: white;
+    text-shadow: 4px 4px 6px black;
+    font-size: 4em;
+    position: absolute;
+    top: 70%;
+    left: 10px;
+}
+
+footer{
+    background: #DDD;
+    color: #675B52;
+}
+
+footer .row{
+    padding: 40px 0px;
+}
+
+footer .policy{
+    background: #000;
+    color: white;
+    text-align: center;
+}
+
+footer h3{
+    font-size: 1.5em;
+    border-bottom: 1px dashed #444;
+}
+
+footer iframe{
+    width: 100%;
+    height: 200px;
 }
