@@ -1,0 +1,27 @@
+header{
+    position: relative;
+}
+
+header .navbar{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header .navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    line-height: 0.5em;
+    padding-left: 20px;
+    position: relative;
+    text-shadow: 2px 2px 2px black;
+}
+
+header .navbar-brand img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}

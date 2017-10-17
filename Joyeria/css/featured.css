@@ -1,0 +1,43 @@
+.featured{
+    background: #EEE;
+    margin: 30px 0px;
+    padding: 20px 0px;
+}
+
+.featured h3{
+    font-family: 'Great Vibes', cursive;
+}
+
+.featured .name{
+    font-weight: bold;
+}
+
+.featured .brand{
+    font-size: 0.8em;
+    color: #555;
+}
+
+.featured img{
+    width: 100%;
+    background: white;
+    border: 1px solid #AAA;
+    padding: 3px;
+    margin: auto;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.featured .item{
+    height: 100%;
+    border-bottom: 1px solid #888;
+}
+
+.featured .description{
+    font-size: 0.9em;
+    background: #DDD;
+    display: block;
+    padding: 5px;
+}
+
+.featured .price{
+    font-weight: bold;
+}
