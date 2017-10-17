@@ -22,13 +22,11 @@
     background: white;
     border: 1px solid #AAA;
     padding: 3px;
-    margin: auto;
     box-shadow: 1px 1px 4px #999;
 }
 
 .featured .item{
     height: 100%;
-    border-bottom: 1px solid #888;
 }
 
 .featured .description{
@@ -40,4 +38,22 @@
 
 .featured .price{
     font-weight: bold;
+}
+
+@media screen and (max-width: 767px){
+    .featured .item{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .featured .item::before{
+        content: '';
+        position: absolute;
+        width: 30%;
+        bottom: 15px;
+        left: 35%;
+        border-bottom: 3px solid #DDD;
+    }
 }
